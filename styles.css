@@ -1,0 +1,140 @@
+/* CSS styles for Brainbox game UI */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    background-image: url("Image Folder/cava\ background.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin: 0;
+    margin-bottom: 20px;
+}
+#question-container {
+    display: none; /* Initially hide question container */
+}
+
+#question {
+    font-size: 24px;
+    color: #555;
+    margin: 20px 0;
+}
+
+.options button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.options button:hover {
+    background-color: #0056b3;
+}
+
+#score-container {
+    display: none; /* Initially hide result container */
+}
+
+#score-message {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #1cb026;
+}
+
+#next-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#next-button:hover {
+    background-color: #0056b3;
+}
+
+.container h2 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* Adjust layout for small screens */
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /* Style for the container that holds the buttons */
+.button-container {
+    display: flex; /* Use Flexbox to horizontally align buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 20px; /* Adjust the spacing between buttons */
+}
+
+/* Style for the Play Again and End Game buttons */
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #3498db; /* Button border */
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #3498db, #2980b9); /* Gradient background */
+    color: #ffffff; /* Button text color */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, #2980b9, #3498db) !important; /* Hover gradient background */
+    color: #ffffff !important; /* Hover text color */
+    border-color: #2980b9 !important; /* Hover border color */
+}
+
+/* Style for specific buttons */
+#play-again {
+    background: linear-gradient(to bottom, #27ae60, #219f4d); /* Customize the color for Play Again button */
+    border-color: #27ae60; /* Customize the border color for Play Again button */
+}
+
+#end-game {
+    background: linear-gradient(to bottom, #e74c3c, #d63628); /* Customize the color for End Game button */
+    border-color: #e74c3c; /* Customize the border color for End Game button */
+}
+
+
+

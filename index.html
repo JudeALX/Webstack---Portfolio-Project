@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainBox</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--this is to help style the play again and end game button-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+<body>  
+    <div class="container">
+        <h1>BrainBox</h1>
+        <div id="question-container">
+            <h2 id="question"></h2>
+            <div class="options" id="options">
+                <!-- Options will be filled dynamically with JavaScript -->
+            </div>
+        </div>
+        <div id="score-container">
+            <p id="score-message"></p>
+            <button id="next-button">Next Question</button>
+        </div>
+
+        <div class="button-container">
+            <button class="button" id="play-again">Play Again</button>
+            <button class="button" id="end-game">End Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
